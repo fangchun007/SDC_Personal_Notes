@@ -10,5 +10,5 @@ In general, the measurement update cycle is believed to connected with Bayes rul
 
 In self-driving car program, the measurement is from radar or lidar, which should be independent with the prior, or the result of prediction cycle. So to get a better result (posterior), one can always use Bayes rule and do production. 
 
-**Note**. In general the product of two or more Gaussian distributions is not a Gaussian any more. We approximate the result with a Gaussian distribution here. 
+
 
