@@ -31,9 +31,11 @@ See picture
 ```
 **Design of Kalman Filter**:
 ```
-x'       = x + \delta_t * \dot{x}
+      x' = x + \delta_t * \dot{x}
 \dot{x}' = \dot{x}
-Let F = [[1, delta_t],[0, 1]], H = [1, 0].
+
+Let F = [[1, delta_t],[0, 1]], 
+    H = [1, 0].
 
 UPDATE
   Predition:
@@ -59,10 +61,11 @@ UPDATE
 **Test Code**: From Udacity
 
 To observe the function of Kalman Filter, one can revise the value of *measurements*. For example,
-    * measurements = [1, 2, 3]
-    * measurements = [1, 2, 3, 4, 5]
-    * measurements = [1, 2, 3, 4, 5, 7, 9, 11, 13, 15]
-    * measurements = [1, 2, 3, 4, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
+
+  * measurements = [1, 2, 3]
+  * measurements = [1, 2, 3, 4, 5]
+  * measurements = [1, 2, 3, 4, 5, 7, 9, 11, 13, 15]
+  * measurements = [1, 2, 3, 4, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
 
 ```
 # Write a function 'kalman_filter' that implements a multi-
