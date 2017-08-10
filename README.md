@@ -2,6 +2,8 @@
 
 This note is mainly used for record my personal understandings about self-driving car program. 
 
+**Udacity's Self-driving Car Engineer Nanodegree programme covers deep learning, computer vision, sensor fusion, controllers, and related automotive hardware skills.**
+
 ## Kalman Filter
 
 Kalman Filter is a popular technique that used in tracking. The idea is to represents the location of tracking object by Gaussian and iterates on two main cycles - Measurement Update Cycle and Motion Update/Prediction Cycle - to obtain a more accurate distribution than those based on a single measurement alone. 
