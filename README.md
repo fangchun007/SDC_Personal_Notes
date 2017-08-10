@@ -272,6 +272,11 @@ Here, v_k is noise vector
 Figure out how the change rate of state $\dot{x}$ depends on the state $x$.
 
 ```
-\dot{x} = g(x) = ?
+\dot{x} = \frac{\partial x}{\partial t} = g(x(t)) = ?
 ```
+As a result, we have
+```
+x_{k+1} = x_k + \int_{t_k}^{t_{k+1}} g(x(t)) dt
+```
+
 
