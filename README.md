@@ -280,5 +280,7 @@ As a result, we have
 ```
 x_{k+1} = x_k + \int_{t_k}^{t_{k+1}} g(x(t)) dt
 ```
+**Kalman Filter vs Extended Kalman Filter vs Unscented Kalman Filter**
 
+A standard Kalman filter can only handle linear equations. Both the extended Kalman filter and the unscented Kalman filter allow you to use non-linear equations; the difference between EKF and UKF is how they handle non-linear equations.
 
