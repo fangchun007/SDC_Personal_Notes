@@ -253,7 +253,7 @@ print kalman_filter(x, P)
 ## Unscented Kalman Filters (UKF)
 The Unscented Kalman Filter is an alternative technique to deal with nonlinear process models or nonlinear measurement models. But instead of linearizing a nonlinear function, the UKF uses sigma points to approximate the probability distribution. This idea has at least two advantages. First, UKF allows to use more realistic models, even more complex, to describe the motion of a tracking object. Second, in many cases the sigma points approximate the nonlinear transition better than a linearization does. Some people also consider the unnecessary calculation of Jacobian matrix as the third one.
 
-**Models**
+**Processing Models**
 
 * constant velocity model (CV)
 * constant turn rate and velocity magnitude model (CTRV)
@@ -261,5 +261,17 @@ The Unscented Kalman Filter is an alternative technique to deal with nonlinear p
 * constant steering angle and velocity (CSAV)
 * constant curvature and acceleration (CCA)
 
+```
+State vector:    x
+Process Model:   x_{k+1} = f(x_k, v_k)
+Here, v_k is noise vector
+```
 
+**One useful skill in deriving of a process model**
+
+Figure out how the change rate of state $\dot{x}$ depends on the state $x$.
+
+```
+\dot{x} = g(x) = ?
+```
 
