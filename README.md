@@ -1,6 +1,6 @@
 # Self-Driving Car Program Note
 
-This note is mainly used for record some personal understanding about self-driving car program. 
+This note is mainly used for record my personal understandings about self-driving car program. 
 
 ## Kalman Filter
 
