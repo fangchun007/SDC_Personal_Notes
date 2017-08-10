@@ -264,7 +264,7 @@ The Unscented Kalman Filter is an alternative technique to deal with nonlinear p
 ```
 State vector:    x
 Process Model:   x_{k+1} = f(x_k, v_k)
-Here, v_k is noise vector
+Here, v_k is the process noise vector
 ```
 
 **One useful skill in deriving of a process model**
