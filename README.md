@@ -67,6 +67,8 @@ To observe the function of Kalman Filter, one can revise the value of *measureme
   * measurements = [1, 2, 3, 4, 5, 7, 9, 11, 13, 15]
   * measurements = [1, 2, 3, 4, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]
 
+You will find the accuracy heavily depend on the model you used. Here, in the code, the constant velocity (CV) model was used.
+
 ```
 # Write a function 'kalman_filter' that implements a multi-
 # dimensional Kalman Filter for the example given
@@ -246,7 +248,18 @@ print kalman_filter(x, P)
 ```
 
 
+## Extended Kalman Filters (EKF)
 
+## Unscented Kalman Filters (UKF)
+The Unscented Kalman Filter is an alternative technique to deal with nonlinear process models or nonlinear measurement models. But instead of linearizing a nonlinear function, the UKF uses sigma points to approximate the probability distribution. This idea has at least two advantages. First, UKF allows to use more realistic models, even more complex, to describe the motion of a tracking object. Second, in many cases the sigma points approximate the nonlinear transition better than a linearization does. Some people also consider the unnecessary calculation of Jacobian matrix as the third one.
+
+**Models**
+
+* constant velocity model (CV)
+* constant turn rate and velocity magnitude model (CTRV)
+* constant turn rate and acceleration (CTRA)
+* constant steering angle and velocity (CSAV)
+* constant curvature and acceleration (CCA)
 
 
 
