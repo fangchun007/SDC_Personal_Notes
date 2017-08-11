@@ -284,3 +284,10 @@ x_{k+1} = x_k + \int_{t_k}^{t_{k+1}} g(x(t)) dt
 
 A standard Kalman filter can only handle linear equations. Both the extended Kalman filter and the unscented Kalman filter allow you to use non-linear equations; the difference between EKF and UKF is how they handle non-linear equations.
 
+
+## Localization
+
+**Aim**: To figure out where is our car in a given map with an accuracy of 10 cm or less.
+
+
+
