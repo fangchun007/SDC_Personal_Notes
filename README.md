@@ -285,7 +285,7 @@ A standard Kalman filter can only handle linear equations. Both the extended Kal
 
 **Aim**: To figure out where is our car in a given map with an accuracy of 10 cm or less.
 
-**Idea**: Let's describe the possible location of our vehicle by a distribution. Similar to tracking problems, localization algorithms use sense (for landmarks) / measurement update and move (prediction) to improve the accuracy of this distribution.
+**Idea**: Let's describe the possible location of our vehicle by a distribution. Then the aim of localization is to improve a high accuracy of this distribution. Similar to tracking problems, localization algorithms use sense (for landmarks) / measurement update and move (prediction) cycles to improve the accuracy of this distribution.
 ```
     |-----------------------|                  |----------------|
     | Sense                 |   ----------->   |  Move          |
