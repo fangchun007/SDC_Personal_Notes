@@ -2,7 +2,7 @@
 
 This note is mainly used for record my personal understandings about self-driving car program. 
 
-**Udacity's Self-driving Car Engineer Nanodegree programme covers machine learning, deep learning, computer vision, sensor fusion, controllers, and related automotive hardware skills. (NOT ACCURATE)**
+**Udacity's Self-driving Car Engineer Nanodegree programme covers machine learning, deep learning, computer vision, sensor fusion, localization, controllers, and related automotive hardware skills. (NOT ACCURATE and NOT SUFFICIENT)**
 
 ## Kalman Filter
 
