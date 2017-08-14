@@ -305,6 +305,8 @@ u_{1:t}    Controls (yaw, pitch, roll rates, velocities, ...)
 m          Map info
 
 x_t        Current position (2D)
+
+Note. u_t denote the controls at time t-1 that will affect the position of the vehicle at time t; similarly, z_t denote the observations from the vehicle at time t.
 ```
 Then, one can write
 ```
