@@ -327,4 +327,6 @@ bel(x_t) = p(x_t | z_{1:t}, u_{1:t}, m)
                 // Markov Assumption
          = p(z_t | x_t) * \int [p(x_t|x_{t-1}, u_t) * p(x_{t-1}|z_{1:t-1}, u_{1:t-1}, m)] dx_{t-1} / denominator
          = p(z_t | x_t) * \int [p(x_t|x_{t-1}, u_t) * bel(x_{t-1})] dx_{t-1} / denominator
+         
+posterior = measurement update (likelihood) * prediction
 ```
