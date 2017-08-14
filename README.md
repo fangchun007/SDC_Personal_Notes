@@ -294,4 +294,19 @@ A standard Kalman filter can only handle linear equations. Both the extended Kal
     |-----------------------|                  |----------------|
 ```
 
+### Markov Localization
 
+This subsection is one try to solve above problem. How? Use all of relevant history information to give a better estimation of the belief of current position of vehicle. 
+
+For convenience, denote 
+```
+z_{1:t}    Observation (such as range measurements, bearing, images, ...)
+u_{1:t}    Controls (yaw, pitch, roll rates, velocities, ...)
+m          Map info
+
+x_t        Current position (2D)
+```
+Then, one can write
+```
+bel(x_t) = p(x_t | z_{1:t}, u_{1:t}, m)
+```
