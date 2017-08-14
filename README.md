@@ -310,3 +310,5 @@ Then, one can write
 ```
 bel(x_t) = p(x_t | z_{1:t}, u_{1:t}, m)
 ```
+
+Up to here, we will meet two problems: a) in each cycle of updata and prediction, we need to handle more than 100 G data, and b) the amout of data increase over time. If we think about the nature of our former formulation, It is not hard to find out the reason of obtaining a better estimation of the vehicle's location is due to the fact that all history information can figure out a unique route in some sense. 
