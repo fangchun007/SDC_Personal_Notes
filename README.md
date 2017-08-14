@@ -313,4 +313,18 @@ Then, one can write
 bel(x_t) = p(x_t | z_{1:t}, u_{1:t}, m)
 ```
 
-Up to here, we will meet two problems: a) in each cycle of updata and prediction, we need to handle more than 100 GBs data, and b) the amout of data increase over time. If we think about the nature of our former formulation, It is not hard to find out the reason of obtaining a better estimation of the vehicle's location is due to the fact that all history information can figure out a unique route in some sense. 
+Up to here, we will meet two problems: a) in each cycle of updata and prediction, we need to handle more than 100 GBs data, and b) the amout of data increase over time. If we think about the nature of our former formulation, It is not hard to find out the reason of obtaining a better estimation of the vehicle's location is due to the fact that all history information can figure out a unique route in some sense. So, if we already have enough information to make a unique route in finite time/steps, we don't have to consider the former information. Another point of Markov localization is aprroximation. Namely, instead of achieve the highest accuracy in one step, it improves the accuracy gradually. 
+```
+bel(x_t) = p(x_t | z_{1:t}, u_{1:t}, m) 
+         = p(x_t | z_t, z_{1:t-1}, u_{1:t}, m)
+                // Bayes Rule
+         = \frac{ p(z_t | x_t, z_{1:t-1}, u_{1:t}, m) * p(x_t | z_{1:t-1}, u_{1:t}, m) }{ p(z_t | z_{1:t-1}, u_{1:t}, m) }
+                // denominator = p(z_t | z_{1:t-1}, u_{1:t}, m)
+                // Markov Assumption
+         = p(z_t | x_t) * p(x_t | z_{1:t-1}, u_{1:t}, m) / denominator
+                // Total Probability
+         = p(z_t | x_t) * \int [p(x_t|x_{t-1}, z_{1:t-1}, u_{1:t}, m)*p(x_{t-1}|z_{1:t-1}, u_{1:t}, m)] dx_{t-1} / denominator
+                // Markov Assumption
+         = p(z_t | x_t) * \int [p(x_t|x_{t-1}, u_t) * p(x_{t-1}|z_{1:t-1}, u_{1:t-1}, m)] dx_{t-1} / denominator
+         = p(z_t | x_t) * \int [p(x_t|x_{t-1}, u_t) * bel(x_{t-1})] dx_{t-1} / denominator
+```
