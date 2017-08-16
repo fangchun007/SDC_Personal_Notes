@@ -1,8 +1,8 @@
-# Self-Driving Car Program Note
+# Self-Driving Car Engineer Nano-degree Program Note
 
-This note is mainly used for record my personal understandings about self-driving car program. 
+This note is mainly used to record my personal understandings or observation on self-driving car program. 
 
-**Udacity's Self-driving Car Engineer Nanodegree programme covers machine learning, deep learning, computer vision, sensor fusion, localization, controllers, and related automotive hardware skills. (NOT ACCURATE and NOT SUFFICIENT)**
+**Udacity's Self-driving Car Engineer Nanodegree programme covers machine learning, deep learning, computer vision, sensor fusion, localization, control, and related automotive hardware skills. (NOT ACCURATE and NOT SUFFICIENT)**
 
 ## Kalman Filter
 
