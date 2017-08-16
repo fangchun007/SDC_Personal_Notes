@@ -24,4 +24,6 @@ while (sum(dp) >= epsilon):
 ```
 
 **Disadvantages**
-1. 
+1. Local optimal value
+Solution: Random choice of initial value
+2. suppose 
