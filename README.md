@@ -330,3 +330,23 @@ bel(x_t) = p(x_t | z_{1:t}, u_{1:t}, m)
          
 posterior = measurement update (likelihood) * prediction
 ```
+
+### Particle Filter
+
+Particle Filter is one way to bring the above thought true. It approximate distribution of the position of our vehicle by the 'shape' of a group of 'particles', where each particle stands for a possible state of the vehicle. The higher density where particles are, the higher possibility our vehicle could be. 
+
+Particle Filter still uses a dynamical way to improve its accuracy. Every time we obtain new measurements about the environment, the particle filter algorithm will use them and 'drive' particles to higher possibility places. 
+
+How? **Resampling!!** At the beginning of prediction-measurement update cycle, every particle has a weight with value 1. Using new measurements, one can find a way to update those weights so that higer weights means higher possibility. Now we can do resampling on these particles according to the obtained new weights. In the prediction step, we use CTRV model.
+
+
+## Control
+
+### PID Controller
+
+### Model Predictive Control
+
+
+
+
+
