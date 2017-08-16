@@ -6,6 +6,8 @@ TODO: ADD A FLOWCHART FOR EACH TOPIC
 
 **Udacity's Self-driving Car Engineer Nanodegree programme covers machine learning, deep learning, computer vision, sensor fusion, localization, control, and related automotive hardware skills. (NOT ACCURATE and NOT SUFFICIENT)**
 
+**Kalman Filter, Unscented Kalman Filter, Particle Filter are three popular techiques used in target tracking and localization. PID and MPC are two popular methods for control.** In tracking and localization problems, algorithm implementation is important. In control problmes, both alogrithm implementation and parameter tuning are important. Note that we also need to decide how many particles will be used in partile filter.
+
 ## Kalman Filter
 
 Kalman Filter is a popular technique that used in tracking. The idea is to represents the location of tracking object by Gaussian and iterates on two main cycles - Measurement Update Cycle and Motion Update/Prediction Cycle - to obtain a more accurate distribution than those based on a single measurement alone. 
