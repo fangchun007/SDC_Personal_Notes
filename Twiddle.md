@@ -1,3 +1,5 @@
+## Twiddle Algorithm
+
 Twiddle algorithm shows an idea to tune parameters. Its result approximates a local optimal value.
 
 ```
@@ -23,11 +25,13 @@ while (sum(dp) >= epsilon):
                 dp[i] *= 0.9
 ```
 
-**Disadvantages**
+## Disadvantages
 1. Local optimal value
 
 Solution: Random choice of initial value
+
 2. The algorithm choose the first drop of *best_err*, not the biggest.
 
-**Template**
+## Template
+
 [CarND-PID-Control-Project](https://github.com/fangchun007/CarND-PID-Control-Project/blob/master/src/main_steer.cpp)
