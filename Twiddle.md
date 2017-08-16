@@ -25,5 +25,9 @@ while (sum(dp) >= epsilon):
 
 **Disadvantages**
 1. Local optimal value
+
 Solution: Random choice of initial value
-2. suppose 
+2. The algorithm choose the first drop of *best_err*, not the biggest.
+
+**Template**
+[CarND-PID-Control-Project](https://github.com/fangchun007/CarND-PID-Control-Project/blob/master/src/main_steer.cpp)
