@@ -356,7 +356,7 @@ PID is short for proportional–integral–derivative. The idea of PID is to cal
 
 To **design** a PID controller, one has to figure out first what is the main difference that you wish to reduce. In our case, a controller is designed to decrease cross track error (cte). So this information should be involved in the design of P component. Of course, one can also consider the product of the present steering angle and sign of cte, i.e., steering_angle * sign(cte) as another factor of P-component. Next step is to design a D component to reduce or even eliminate oscillation of the vehicle that caused by P-component. I-component is to combat with the system bias, such as drift. 
 
-**Parameter tuning** is another interesting part. It is absolutely wrong if one only consider it as a time consuming task. If we have no idea on increasing or decreasing some parameter, I prefer to design an algorithm and leave this work to computer. It is a long story. One can refer [my work](https://github.com/fangchun007/CarND-PID-Control-Project/tree/master/src). 
+**Parameter tuning** is another interesting part. It is absolutely wrong if one only consider it as a time consuming task. If we have no idea on increasing or decreasing some parameter, I prefer to design an algorithm and leave this work to computer. It is a long story. One can refer my work on [PID controller](https://github.com/fangchun007/CarND-PID-Control-Project/tree/master/src). 
 
 ### Model Predictive Control
 
