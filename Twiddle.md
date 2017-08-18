@@ -28,7 +28,7 @@ while (sum(dp) >= epsilon):
 ## Disadvantages
 1. Local optimal value
 
-Solution: Random choosing of an initial value
+Solution: Random search for initial value
 
 2. The algorithm choose the first decreasing of *best_err*, not the biggest.
 
