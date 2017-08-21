@@ -1,12 +1,14 @@
 # Self-Driving Car Engineer Nano-degree Program Note
 
-This note is mainly used to record my personal understandings or observation on self-driving car program. 
+This note is mainly used to record my personal understandings or observation on self-driving car program. As we known, self-driving car engineers today use two distinct approaches to autonomous development, a robotics approach and a deep learning approach. In this note, we discuss about the long history robotics approach. It fuses output from a suite of sensors to directly measure the vehicle surroundings and then navigate accordingly, which includes sensor fusion, localization and control.
 
 TODO: ADD A FLOWCHART FOR EACH TOPIC
 
 **Udacity's Self-driving Car Engineer Nanodegree programme covers machine learning, deep learning, computer vision, sensor fusion, localization, control, and related automotive hardware skills. (NOT ACCURATE and NOT SUFFICIENT)**
 
 **Kalman Filter, Unscented Kalman Filter, Particle Filter are three popular techiques used in target tracking and localization. PID and MPC are two popular methods for control.** In tracking and localization problems, algorithm implementation is important. In control problmes, both alogrithm implementation and parameter tuning are important. Note that we also need to decide how many particles will be used in partile filter.
+
+
 
 ## Kalman Filter
 
